@@ -1,10 +1,6 @@
-# spaceflights
-
 ## Overview
 
 This is your new Kedro project, which was generated using `Kedro 0.18.0`.
-
-Take a look at the [Kedro documentation](https://kedro.readthedocs.io) to get started.
 
 ## Rules and guidelines
 
@@ -14,6 +10,21 @@ In order to get the best out of the template:
 * Make sure your results can be reproduced by following a [data engineering convention](https://kedro.readthedocs.io/en/stable/faq/faq.html#what-is-data-engineering-convention)
 * Don't commit data to your repository
 * Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
+
+## How to install the data
+
+To install the raw data used by this project, run the following commands
+```
+# reviews
+curl -o data/01_raw/reviews.csv https://kedro-org.github.io/kedro/reviews.csv
+
+# companies
+curl -o data/01_raw/companies.csv https://kedro-org.github.io/kedro/companies.csv
+
+# shuttles
+curl -o data/01_raw/shuttles.xlsx https://kedro-org.github.io/kedro/shuttles.xlsx
+```
+
 
 ## How to install dependencies
 
